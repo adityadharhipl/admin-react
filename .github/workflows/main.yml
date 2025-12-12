@@ -1,0 +1,46 @@
+name: Admin-Frontend
+
+on:
+  push:
+    branches:
+      - "main"
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      CI: false
+      NODE_OPTIONS: "--max-old-space-size=8192"
+
+    steps:
+      - name: Check Heap Size Limit
+        run: node -e 'console.log(require("v8").getHeapStatistics().heap_size_limit/(1024*1024))'
+
+      - uses: actions/checkout@v1
+      - run: npm install --legacy-peer-deps
+
+      - name: Build with Increased Heap Memory
+        run: npm run build
+        env:
+          NODE_OPTIONS: ${{ env.NODE_OPTIONS }}
+
+      - name: Remove existing build folder
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USERNAME }}
+          key: ${{ secrets.EC2_PRIVATE_KEY }}
+          port: ${{ secrets.EC2_PORT }}
+          script: |
+           sudo rm -rf /var/www/html/admin/build/
+
+      - name: Upload build to EC2 instance
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USERNAME }}
+          key: ${{ secrets.EC2_PRIVATE_KEY }}
+          port: ${{ secrets.EC2_PORT }}
+          source: "build/" # Path to your build directory
+          target: "/var/www/html/admin/" # Path on your EC2 instance where you want to upload the build

@@ -1,0 +1,370 @@
+{
+    "menu": [
+        {
+            "name": "Dashboard",
+            "routerLink": [
+                "dashboard"
+            ],
+            "identifier": "Dashboard",
+            "iconClass": "icofont-home fs-5",
+            "breadcrumbMessage": "Welcome to Analytics Dashboard.",
+            "isCategory": false,
+            "isApp": false,
+            "children": []
+        },
+        {
+            "name": "Student Management",
+            "routerLink": [
+                "student-management"
+            ],
+            "identifier": "Student Management",
+            "iconClass": "icofont-users-alt-5 fs-5",
+            "breadcrumbMessage": "",
+            "isCategory": false,
+            "isApp": false,
+            "children": [
+                {
+                    "name": "Student Subjects",
+                    "routerLink": [
+                        "expertise-list"
+                    ],
+                    "identifier": "Subjects",
+                    "iconClass": "icofont-notepad fs-5",
+                    "breadcrumbMessage": "",
+                    "isCategory": false,
+                    "isApp": true,
+                    "children": []
+                },
+                {
+                    "name": "Student Tags",
+                    "routerLink": [
+                        "student-tag-management"
+                    ],
+                    "identifier": "Student Tag",
+                    "iconClass": "icofont-tag fs-5",
+                    "breadcrumbMessage": "",
+                    "isCategory": false,
+                    "isApp": true,
+                    "children": []
+                },
+                {
+                    "name": "Students",
+                    "routerLink": [
+                        "student-list"
+                    ],
+                    "identifier": "Student",
+                    "iconClass": "icofont-users fs-5",
+                    "breadcrumbMessage": "",
+                    "isCategory": false,
+                    "isApp": true,
+                    "children": []
+                }
+            ]
+        },
+        {
+            "name": "Student Support & Operations",
+            "routerLink": [
+                "student-support-operations"
+            ],
+            "identifier": "Student Support & Operations",
+            "iconClass": "icofont-headphone-alt fs-5",
+            "breadcrumbMessage": "",
+            "isCategory": false,
+            "isApp": false,
+            "children": [
+                {
+                    "name": "Student Reviews",
+                    "routerLink": [
+                        "student-reviews"
+                    ],
+                    "identifier": "Student Reviews",
+                    "iconClass": "icofont-star fs-5",
+                    "breadcrumbMessage": "",
+                    "isCategory": false,
+                    "isApp": false,
+                    "children": []
+                },
+                {
+                    "name": "Student App Tickets",
+                    "routerLink": [
+                        "student-support"
+                    ],
+                    "identifier": "Student App Tickets",
+                    "iconClass": "icofont-ticket fs-5",
+                    "breadcrumbMessage": "",
+                    "isCategory": false,
+                    "isApp": false,
+                    "children": []
+                },
+                {
+                    "name": "Student Support",
+                    "routerLink": [
+                        "student-support-ticket"
+                    ],
+                    "identifier": "Student Support Details",
+                    "iconClass": "icofont-support-faq fs-5",
+                    "breadcrumbMessage": "",
+                    "isCategory": false,
+                    "isApp": false,
+                    "children": []
+                }
+            ]
+        },
+        {
+            "name": "User Support & Operations",
+            "routerLink": [
+                "user-support-operations"
+            ],
+            "identifier": "User Support & Operations",
+            "iconClass": "icofont-live-support fs-5",
+            "breadcrumbMessage": "",
+            "isCategory": false,
+            "isApp": false,
+            "children": [
+                {
+                    "name": "User Feedback",
+                    "routerLink": [
+                        "user-feedback"
+                    ],
+                    "identifier": "userfeedback",
+                    "iconClass": "icofont-comment fs-5",
+                    "breadcrumbMessage": "",
+                    "isCategory": false,
+                    "isApp": false,
+                    "children": []
+                },
+                {
+                    "name": "User App Tickets",
+                    "routerLink": [
+                        "user-support"
+                    ],
+                    "identifier": "User Support",
+                    "iconClass": "icofont-ticket fs-5",
+                    "breadcrumbMessage": "",
+                    "isCategory": false,
+                    "isApp": false,
+                    "children": []
+                }
+            ]
+        },
+        {
+            "name": "Product Management",
+            "routerLink": [
+                "product-management"
+            ],
+            "identifier": "Product Management",
+            "iconClass": "icofont-box fs-5",
+            "breadcrumbMessage": "",
+            "isCategory": false,
+            "isApp": false,
+            "children": [
+                {
+                    "name": "AI Tutors",
+                    "routerLink": [
+                        "ai-tutor-list"
+                    ],
+                    "identifier": "AI Tutor",
+                    "iconClass": "icofont-robot fs-5",
+                    "breadcrumbMessage": "",
+                    "isCategory": false,
+                    "isApp": true,
+                    "children": []
+                },
+                {
+                    "name": "Notification",
+                    "routerLink": [
+                        "notification-list"
+                    ],
+                    "identifier": "notification",
+                    "iconClass": "icofont-notification fs-5",
+                    "breadcrumbMessage": "",
+                    "isCategory": false,
+                    "isApp": true,
+                    "children": []
+                },
+                {
+                    "name": "Language",
+                    "routerLink": [
+                        "language-list"
+                    ],
+                    "identifier": "Language",
+                    "iconClass": "icofont-globe-alt fs-5",
+                    "breadcrumbMessage": "",
+                    "isCategory": false,
+                    "isApp": true,
+                    "children": []
+                }
+            ]
+        },
+        {
+            "name": "Admin",
+            "routerLink": [
+                "admin"
+            ],
+            "identifier": "Admin",
+            "iconClass": "icofont-user fs-5",
+            "breadcrumbMessage": "",
+            "isCategory": false,
+            "isApp": false,
+            "children": [
+                {
+                    "name": "Roles Mngmnt",
+                    "routerLink": [
+                        "role-management"
+                    ],
+                    "identifier": "Role Management",
+                    "iconClass": "icofont-users-alt-1 fs-5",
+                    "breadcrumbMessage": "",
+                    "isCategory": false,
+                    "isApp": false,
+                    "children": []
+                },
+                {
+                    "name": "Team Mngmnt",
+                    "routerLink": [
+                        "user-management"
+                    ],
+                    "identifier": "User Management",
+                    "iconClass": "icofont-users-social fs-5",
+                    "breadcrumbMessage": "",
+                    "isCategory": false,
+                    "isApp": false,
+                    "children": []
+                }
+            ]
+        },
+        {
+            "name": "CMS",
+            "routerLink": [
+                "cms"
+            ],
+            "identifier": "CMS",
+            "iconClass": "icofont-dotcms fs-5",
+            "breadcrumbMessage": "",
+            "isCategory": false,
+            "isApp": false,
+            "children": [
+                {
+                    "name": "Users",
+                    "routerLink": [
+                        "users-list"
+                    ],
+                    "identifier": "Users",
+                    "iconClass": "icofont-users-social fs-5",
+                    "breadcrumbMessage": "",
+                    "isCategory": false,
+                    "isApp": true,
+                    "children": []
+                },
+                {
+                    "name": "Bookings",
+                    "routerLink": [
+                        "booking-list"
+                    ],
+                    "identifier": "Booking",
+                    "iconClass": "icofont-air-ticket fs-5",
+                    "breadcrumbMessage": "",
+                    "isCategory": false,
+                    "isApp": true,
+                    "children": []
+                },
+                {
+                    "name": "Top Banners",
+                    "routerLink": [
+                        "top-banners"
+                    ],
+                    "identifier": "Top Banners",
+                    "iconClass": "icofont-image fs-5",
+                    "breadcrumbMessage": "",
+                    "isCategory": false,
+                    "isApp": false,
+                    "children": []
+                },
+                {
+                    "name": "Onboarding Images",
+                    "routerLink": [
+                        "onboarding-images"
+                    ],
+                    "identifier": "Onboarding Images",
+                    "iconClass": "icofont-image fs-5",
+                    "breadcrumbMessage": "",
+                    "isCategory": false,
+                    "isApp": false,
+                    "children": []
+                },
+                {
+                    "name": "About Us",
+                    "routerLink": [
+                        "about-us"
+                    ],
+                    "identifier": "About Us",
+                    "iconClass": "icofont-info-circle fs-5",
+                    "breadcrumbMessage": "",
+                    "isCategory": false,
+                    "isApp": false,
+                    "children": []
+                },
+                {
+                    "name": "Privacy Policy",
+                    "routerLink": [
+                        "privacy-policy"
+                    ],
+                    "identifier": "Privacy Policy",
+                    "iconClass": "icofont-lock fs-5",
+                    "breadcrumbMessage": "",
+                    "isCategory": false,
+                    "isApp": false,
+                    "children": []
+                },
+                {
+                    "name": "Terms & Condition",
+                    "routerLink": [
+                        "terms-conditions"
+                    ],
+                    "identifier": "Terms & Condition",
+                    "iconClass": "icofont-file-alt fs-5",
+                    "breadcrumbMessage": "",
+                    "isCategory": false,
+                    "isApp": false,
+                    "children": []
+                },
+                {
+                    "name": "Refund Policy",
+                    "routerLink": [
+                        "refund-policy"
+                    ],
+                    "identifier": "Refund Policy",
+                    "iconClass": "icofont-money-bag fs-5",
+                    "breadcrumbMessage": "",
+                    "isCategory": false,
+                    "isApp": false,
+                    "children": []
+                },
+                {
+                    "name": "Generic FAQs",
+                    "routerLink": [
+                        "generic-faq"
+                    ],
+                    "identifier": "Generic faq",
+                    "iconClass": "icofont-question-circle fs-5",
+                    "breadcrumbMessage": "",
+                    "isCategory": false,
+                    "isApp": false,
+                    "children": []
+                },
+                {
+                    "name": "Wallet Recharge Packs",
+                    "routerLink": [
+                        "consultation-voucher"
+                    ],
+                    "identifier": "Wallet Recharge Packs",
+                    "iconClass": "icofont-wallet fs-5",
+                    "breadcrumbMessage": "",
+                    "isCategory": false,
+                    "isApp": false,
+                    "children": []
+                }
+            ]
+        }
+    ]
+}

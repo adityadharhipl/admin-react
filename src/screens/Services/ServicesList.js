@@ -1,0 +1,18 @@
+import React from 'react';
+import CardBlock from '../../components/Services/ServiceList/CardBlock';
+import PageHeader1 from '../../components/common/PageHeader1';
+
+function ServicesList() {
+
+    return (
+        <div className="container-xxl">
+            <PageHeader1 pagetitle='Services' servicelist={true} />
+            <div className="row g-3 mb-3">
+                <div className="col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <CardBlock />
+                </div>
+            </div>
+        </div>
+    )
+}
+export default ServicesList;
